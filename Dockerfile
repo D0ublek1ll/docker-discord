@@ -32,7 +32,7 @@ RUN cd /usr/src \
     && cd Python-3.9.4 \
     && ./configure --enable-optimizations \
     && make altinstall
-RUN pip3.9 install asyncio aiohttp discord image
+RUN pip3.9 install asyncio aiohttp discord image sys
 
 # C Sharp & .NET
 RUN apt -y install mono-runtime
