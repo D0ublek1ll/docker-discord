@@ -9,8 +9,8 @@ RUN apt update \
 # Install gnupg2 & wget
 RUN apt install -y gnupg2 wget
 
-# NodeJS 12
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+# NodeJS 14
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt -y install nodejs
 
 # PHP 7.2
